@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E6F7FF;  /* Light blue for calmness */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #FFFFFF;  /* White for clarity */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00529B;  /* Dark blue for importance and trust */
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+input[type="number"], input[type="date"], select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #7A7A7A;  /* Gray for moderate emphasis */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #FFFFFF;  /* White for clean inputs */
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #007ACC;  /* Motivating blue */
+  color: #FFFFFF;  /* White for contrast */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #00529B;  /* Slightly darker blue for hover effect */
+}
+
+#outputDisplayArea {
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px dashed #00529B;  /* Dark blue for importance */
+  background-color: #E6F7FF;  /* Light blue for calmness */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .container {
+      margin: 20px 10px;
+  }
+}

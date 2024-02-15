@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight & BMI Calculator</title>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight & BMI Calculator</h1>
+      
+      <!-- Form Start -->
+      <form id="calculatorForm">
+
+        <!-- Start Date Input -->
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" value="2023-10-08" required>
+
+<!-- Weight Input -->
+<label for="weight">Weight:</label>
+<input type="number" step="0.01" id="weight" value="240.0" required>
+<label for="unitSelectionWeight">Unit:</label>
+<select id="unitSelectionWeight">
+    <option value="imperial">lbs</option>
+    <option value="metric">kg</option>
+</select>
+
+<!-- Height Input -->
+<label for="height">Height:</label>
+<input type="number" step="0.01" id="height" value="64.5" required>
+<label for="unitSelectionHeight">Unit:</label>
+<select id="unitSelectionHeight">
+    <option value="imperial">in</option>
+    <option value="metric">cm</option>
+</select>
+
+<!-- Age Input -->
+<label for="age">Age:</label>
+<input type="number" step="0.01" id="age" value="25.6" required>
+
+<!-- Gender Selection -->
+<label for="gender">Gender:</label>
+<select id="gender">
+  <option value="female">Female</option>
+    <option value="male">Male</option>
+</select>
+
+<!-- Activity Level Selection -->
+<label for="activityLevel">Activity Level:</label>
+<select id="activityLevel">
+    <option value="sedentary">Sedentary</option>
+    <option value="lightly" selected>Lightly Active</option>
+    <option value="moderately">Moderately Active</option>
+    <option value="very">Very Active</option>
+    <option value="super">Super Active</option>
+</select>
+
+<!-- Daily Caloric Intake Input -->
+<label for="caloricIntake">Average Daily Caloric Intake:</label>
+<input type="number" id="caloricIntake" value="1100" required>
+
+<!-- Desired Output Selection -->
+<label for="desiredOutput">Desired Output:</label>
+<select id="desiredOutput">
+    <option value="" disabled selected>Select...</option>
+    <option value="date">By Date</option>
+    <option value="bmi">By BMI</option>
+    <option value="weight">By Weight</option>
+    <option value="weightLoss">By Weight Loss</option>
+    <option value="table">Display as Table</option>
+    <option value="export">Export to Spreadsheet</option>
+</select>
+
+          
+         <!-- Additional Input (will be dynamically shown based on desired output) -->
+<div id="additionalInput">
+  <div id="additionalInputContent"></div>
+</div>
+
+          
+          <!-- Submit Button -->
+          <input type="submit" id="submit" value="Calculate">
+      </form>
+      
+      <!-- Output Display Area -->
+      <div id="outputDisplayArea"></div>
+  </div>
+  <script src="./scripts.js"></script>
+  </body>
+</html>
